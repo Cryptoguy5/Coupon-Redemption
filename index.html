@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Redemption</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 95%;
+            width: 45%;
+            background-color: white;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(228, 225, 225);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .circle {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .red {
+            background-color: crimson;
+        }
+
+        .blue {
+            background-color: cyan;
+        }
+
+        .yellow {
+            background-color: gold;
+        }
+
+        .bottom {
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-right: 15%;
+            padding-left: 15%;
+            box-sizing: border-box;
+        }
+
+        .save {
+            height: 15%;
+            width: 50%;
+            background-color: rgb(213, 208, 208);
+            border: 5px dotted rgb(118, 117, 117);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 24px;
+        }
+
+        button {
+            height: 10%;
+            width: 50%;
+            background-color: gold;
+            text-align: center;
+            font-weight: bolder;
+            border: none;
+            font-size: 24px;
+        }
+
+        @media (max-width: 680px) {
+            .main {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="circle red"></div>
+            <div class="circle blue"></div>
+            <div class="circle yellow"></div>
+        </div>
+        <div class="bottom">
+            <h2>THANK YOU! WE HAVE A SPECIAL GIFT FOR YOU!</h2>
+            <h1 style="font-size: 36px;">GET 50% OFF</h1>
+            <h3>Here's your coupon code....but hurry! It will expire in 24 hours!</h3>
+            <div class="save">
+              <h2>SAVE50</h2>
+            </div>
+            <p style="margin-top: 5%; font-weight: bolder;">Please redeem this coupon on any product within the next 24 hours to recieve 
+                an instant 50% off at the checkout.
+            </p>
+            <button>Get My Coupon</button>
+        </div>
+    </div>
+</body>
+</html>
